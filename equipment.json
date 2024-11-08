@@ -1,0 +1,23 @@
+{
+    "nodeId": 1,
+    "equipmentList": [
+        {
+            "id": 1,
+            "type": "PVS",
+            "name": "PVS1",
+            "status": "online"
+        },
+        {
+            "id": 2,
+            "type": "SVS",
+            "name": "SVS1",
+            "status": "online"
+        },
+        {
+            "id": 3,
+            "type": "Scanner",
+            "name": "Scanner1",
+            "status": "online"
+        }
+    ]
+}

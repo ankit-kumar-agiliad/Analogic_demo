@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package bag;
+
+service Cips {
+  rpc GetBagList(EmptyRequest) returns (stream FileName);
+  rpc GetBag(FileName) returns (DownloadStatus);
+}
+
+message FileName
+    {
+  string name = 1;
+  string size = 2;
+  Date modified = 3;
+}
+
+message Date {
+  int32 year = 1;
+  int32 month = 2;
+  int32 day = 3;
+}
+
+message DownloadStatus
+    {
+  string request_id = 1;
+}
+
+message EmptyRequest {}
+
+
+
+/* string name = "Bag1.jpg";
+    string size = "1 GB";
+    Date modified = "10/10/2024"; */
